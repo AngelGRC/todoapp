@@ -28,13 +28,13 @@ const TareaForm = (props) => {
       <Card className="sombra">
         <CardBody>
           <Form onSubmit={submit}>
-            <Input maxLength={40}
+            <Input maxLength={40} className="dark"
               placeholder="Enter Title"
               value={inputText}
               onChange={manejarFormulario}
             ></Input>
         <Container className="centro">
-            <Button className="margen__arriba colorPrincipal boton">ADD</Button>
+            <Button className="margen__arriba boton">ADD</Button>
         </Container>
             {!validacion && <span className="validacion">blank space</span>}
           </Form>

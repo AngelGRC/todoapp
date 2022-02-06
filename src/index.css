@@ -23,8 +23,8 @@
   margin-bottom: 1rem;
 }
 
-.margen__derecha{
-    margin-right: 1rem;
+.margen__derecha {
+  margin-right: 1rem;
 }
 
 .centro {
@@ -33,16 +33,11 @@
 }
 
 .derecha {
-    display: flex;
-    justify-content: right;
-  }
-
-.colorPrincipal {
-  background-color: blueviolet;
+  display: flex;
+  justify-content: right;
 }
 
-.boton:focus,
-.boton:hover {
+.colorPrincipal {
   background-color: blueviolet;
 }
 
@@ -56,14 +51,24 @@
 
 .gridTareasTexto {
   grid-area: 1 / 1 / 2 / 2;
+  padding: 1rem;
 }
 
 .gridTareasItem {
   grid-area: 1 / 2 / 2 / 3;
+  padding: 1rem;
+}
+
+.btnFlotante {
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.55rem;
+  z-index: 99;
 }
 
 
-/* Mediaqueries */
+/* Mdqueries */
 
 @media only screen and (max-width: 471px) {
   .gridTareas {
@@ -74,16 +79,26 @@
     grid-row-gap: 0;
     align-items: center;
     justify-items: center;
-    
+
   }
+
   .gridTareasTexto {
     grid-area: 1 / 1 / 2 / 2;
-    
+
   }
 
   .gridTareasItem {
     grid-area: 2 / 1 / 3 / 2;
     justify-content: center;
-    
+
+  }
 }
+
+@media only screen and (max-width: 600px) {
+  .btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px;
+  }
 }

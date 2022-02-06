@@ -48,8 +48,8 @@ const Tarea = (props) => {
       ) : (
         <Form className="formEdit" onSubmit={submitEdit}>
           <InputGroup>
-            <Input value={editText} onChange={manejarEdit} />
-            <Button className="colorPrincipal boton">Save</Button>
+            <Input className="dark" required value={editText} onChange={manejarEdit} />
+            <Button className="boton">Save</Button>
           </InputGroup>
         </Form>
       )}

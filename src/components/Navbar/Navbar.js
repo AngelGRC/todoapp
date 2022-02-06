@@ -9,6 +9,7 @@ const Navbar = () => {
             <NavbarWrapper>
 
                 <h1>Todo App</h1>
+                
 
             </NavbarWrapper>
 
