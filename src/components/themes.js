@@ -14,7 +14,9 @@ export const darkTheme = {
     fontColor: "#fff",
     bgCard: "blueviolet",
     btnColor: "#595959",
-    flotColor: "#fff"
+    flotColor: "blueviolet",
+    btnRotar: "rotate(-180deg);"
+
 };
 
 export const GlobalStyles = createGlobalStyle `
@@ -41,6 +43,8 @@ export const GlobalStyles = createGlobalStyle `
 
     .btnFlotante{
         color ${(props) => props.theme.flotColor};
+        -webkit-transform: ${(props) => props.theme.btnRotar};
+
     }
 
 
